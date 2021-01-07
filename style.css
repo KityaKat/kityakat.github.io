@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Krona+One|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Montserrat');
 
 :root {
   --primary-color: #1DB954;
@@ -8,7 +8,7 @@
   --accent2-color: #3D3B30;
 
   
-  --heading-font: "Pacifico", sans-serif;
+  --heading-font: "Pacifico", serif;
   --paragraph-font: Montserrat, Helvetica, sans-serif;
 
  
@@ -54,9 +54,7 @@ header {
   padding: 1em;
   text-align: center;
   color: var(--paragraph-color-on-color);
-  background-color: var(--text-background-color);
-  display: grid;
-  grid-template-columns: 110px auto; 
+  background-color: var(--text-background-color); 
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
