@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kit Hardwick</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="content" max-width="960px">
@@ -26,7 +27,14 @@
       </main>
 
       <footer>
-        <p>&copy;2020 Kit Hardwick-WDD230.16</p>
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Kit Hardwick-WDD230.16</p>
+        <p id="demo"></p>
+        <script>
+           function myFunction() {
+             var x = new Date(document.lastModified);
+             document.getElementById("demo").innerHTML = x;
+           }
+        </script>
       </footer>
     </div>
   </body>

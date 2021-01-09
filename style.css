@@ -2,26 +2,22 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Montserrat');
 
 :root {
-  --primary-color: #1DB954;
-  --secondary-color: #78C257;
-  --accent1-color: #FDF2E3;
-  --accent2-color: #3D3B30;
+  --primary-color: #9CFBB9;
+  --secondary-color: #EF9478;
+  --accent1-color: #FBE8AE;
+  --accent2-color: #272D2D;
 
   
   --heading-font: "Pacifico", serif;
   --paragraph-font: Montserrat, Helvetica, sans-serif;
 
  
-  --headline-color-on-white: #3D3B30;  
-  --headline-color-on-color: #FDF2E3; 
-  --paragraph-color-on-white: #3D3B30; 
-  --paragraph-color-on-color: #FDF2E3; 
-  --text-background-color: #1DB954;
-  --nav-link-color: #FDF2E3;
-  --nav-background-color: #1DB954;
-  --nav-hover-link-color: #3D3B30;
-  --nav-hover-background-color: #78C257;
-}
+  --headline-color-on-white: #272D2D;  
+  --headline-color-on-color: #FBE8AE; 
+  --paragraph-color-on-white: #272D2D; 
+  --paragraph-color-on-color: #FBE8AE; 
+  --text-background-color: #9CFBB9;
+  }
 
 html {
   background-color: var(--accent1-color);
@@ -47,7 +43,7 @@ h1{
   text-align: center;
 }
 hr{
-  border: 5px solid #78C257;
+  border: 5px solid #EF9478;
   border-radius: 2.5px;
 }
 header {
@@ -61,7 +57,12 @@ header > h1, header > h2 {
 }
 p {
   font-family: var(--paragraph-font);
-  color: #FFDAB3;
+  color: #FBE8AE;
+  padding: 1em;
+}
+li {
+  font-family: var(--paragraph-font);
+  color: #FBE8AE;
   padding: 1em;
 }
 footer{
