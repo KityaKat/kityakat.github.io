@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Montserrat');
 
 :root {
-  --primary-color: #9CFBB9;
+  --primary-color: #4BA581;
   --secondary-color: #EF9478;
   --accent1-color: #FBE8AE;
   --accent2-color: #272D2D;
@@ -16,7 +16,7 @@
   --headline-color-on-color: #FBE8AE; 
   --paragraph-color-on-white: #272D2D; 
   --paragraph-color-on-color: #FBE8AE; 
-  --text-background-color: #9CFBB9;
+  --text-background-color: #4BA581;
   }
 
 html {
@@ -78,7 +78,7 @@ footer a{
   text-align:center;
 }
 a {
-  color: #78C257;
+  color: #4BA581;
 }
 img {
     max-width: 100%;
