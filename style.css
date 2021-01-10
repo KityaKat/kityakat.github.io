@@ -29,7 +29,7 @@ content{
 body {
   max-width: 960px;
   margin: 0 auto;
-  background-color: var(--accent2-color);
+  background-color: #304B42;
   padding: 1em;
 }
 img {
@@ -50,7 +50,7 @@ header {
   padding: 1em;
   text-align: center;
   color: var(--paragraph-color-on-color);
-  background-color: var(--text-background-color); 
+  background-color: #272D2D; 
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
@@ -72,7 +72,7 @@ a {
   font-size: 10pt;
 }
 footer{
-  background-color: var(--text-background-color);
+  background-color: #272D2D;
   display: grid;
   grid-template-columns: 300px auto;
   justify-items: center;
