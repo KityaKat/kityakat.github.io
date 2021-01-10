@@ -17,15 +17,29 @@
            box-shadow: 1px 1px 4px 1px #888; 
            border-radius: 3px; 
            background-color: white;
-           font-family: "helvetica", "Arial", sans-serif;
+           font-family: "Montserrat", "Helvetica", sans-serif;
            overflow: hidden;
          }
-        span{
-            margin-left: 51%;
-            font-size: 14px;
-            color: #888;
+        .column {
+           float: left;
+           width: 33%;
+           padding: 0 10px;
          }
-       </style>
+        .row {
+           margin: 0 -5px;
+         }
+        .row:after {
+           content: "";
+           display: table;
+           clear: both;
+         }
+        @media screen and (max-width: 600px) {
+        .column {
+           width: 100%;
+           display: block;
+           margin-bottom: 20px;
+         }
+    </style>
   </head>
 
 <body>
@@ -33,44 +47,32 @@
         <h1>Design Principles</h1>
     </header>
     <main>
-        <article class="card">
-            <h2>Visual Hierarchy</h2>
+        <div class="column">
+            <article class="card">
+           <h2>Visual Hierarchy</h2>  
+               <a href="DFTBA.com"><h3>DFTBA Records</h3></a>
+               <img src="https://ibb.co/C8nykY7" alt="DFTBA Records Front Page">
+               <p>DFTBA Records is a company that partners with internet creators to help them sell merch. This shot shows a good use of Visual Hierarchy to draw attention to their announcement of moving to a new warehouse</p>
+       </article>
+       </div>
 
-            <div>
-                <div>
-                    <h3>DFTBA Records</h3>
-                    <a href="DFTBA.com"></a>
-                </div>
-                <img src="" alt="DFTBA Records Front Page">
-                <p>DFTBA Records is a company that partners with internet creators to help them sell merch. This shot shows a good use of Visual Hierarchy to draw attention to their announcement of moving to a new warehouse</p>
-            </div>
-        </article>
+        <div class="column">
+            <article class="card">
+                <h2>Fitts's Law</h2>  
+                    <a href="castbox.fm"><h3>Castbox</h3></a>
+                    <img src="https://ibb.co/RNrGVY7" alt="Castbox Show Feed">
+                    <p>Castbox is a podcast platform. Their goal is to get you to listen to podcasts using their app. Therefore, according to Fitts's Law, their call to action button is relatively large, placed in an easily accessed area and a contrasting color. All of this draws your attention to it and makes it easier to use.</p>
+            </article>
+        </div>
 
-        <article class="card">
-            <h2>Fitts's Law</h2>
-
-            <div>
-                <div>
-                    <h3>Castbox</h3>
-                    <a href="castbox.fm"></a>
-                </div>
-                <img src="" alt="Castbox Show Feed">
-                <p>Castbox is a podcast platform. Their goal is to get you to listen to podcasts using their app. Therefore, according to Fitts's Law, their call to action button is relatively large, placed in an easily accessed area and a contrasting color. All of this draws your attention to it and makes it easier to use.</p>
-            </div>
-        </article>
-
-        <article class="card">
-            <h2>Contrast</h2>
-
-            <div>
-                <div>
-                    <h3>Zillow</h3>
-                    <a href="Zillow.com"></a>
-                </div>
-                <img src="" alt="Zillow Landing Page">
-                <p>Zillow is a website that hosts real estate listings. There good use of contrast makes their site easy to understand and use.</p>
-            </div>
-        </article>
+        <div class="column">
+            <article class="card">
+           <h2>Contrast</h2>  
+               <a href="Zillow.com"><h3>Zillow Landing Page</h3></a>
+               <img src="https://ibb.co/hCK5Dv9" alt="DFTBA Records Front Page">
+               <p>Zillow is a website that hosts real estate listings. There good use of contrast makes their site easy to understand and use.</p>
+       </article>
+       </div>
     </main>
 
    <footer>
