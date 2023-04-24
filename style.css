@@ -47,7 +47,7 @@ hr{
   border-radius: 2.5px;
 }
 header {
-  padding: 1em;
+  padding: 3em;
   text-align: center;
   color: var(--paragraph-color-on-color);
   background-color: #272D2D; 
