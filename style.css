@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Pacifico|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Cooper Black|Montserrat');
 
 :root {
   --primary-color: #304B42;
@@ -8,7 +8,7 @@
   --accent2-color: #272D2D;
 
   
-  --heading-font: "Pacifico", serif;
+  --heading-font: "Cooper Black", serif;
   --paragraph-font: Montserrat, Helvetica, sans-serif;
 
  
