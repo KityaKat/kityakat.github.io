@@ -15,83 +15,81 @@
       .card {
         border-radius: 2rem;
         background-color: #29ab87;
-        border: 10px solid #014a44;
+        width: 33%;
+        border: 7px solid #014a44;
         font-family: "Montserrat", "Helvetica", sans-serif;
         overflow: hidden;
+        display: table-cell;
       }
-      .column {
-        float: left;
-        width: 30%;
-        padding: 0 10px;
+      @media only screen and (max-width: 600px) {
+        .card {
+          display: block;
+          width: 100%;
+        }
       }
-      .row {
-        margin: 0 -5px;
-      }
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
+      .card-container {
+        display: table; /* Make the container element behave like a table */
+        width: 100%; /* Set full-width to expand the whole page */
       }
     </style>
   </head>
 
   <body>
     <header>
-      <h1>Design Principles</h1>
+      <h1><b>Design Principles</b></h1>
     </header>
     <main>
-      <div class="row">
-        <div class="column">
-          <article class="card">
-            <h2>Visual Hierarchy</h2>
-            <a href="https://DFTBA.com"><h3>DFTBA Records</h3></a>
+      <div class="card-container">
+        <div class="card">
+          <center>
             <img
               src="https://i.ibb.co/dWt89YR/DFTBA-resize.jpg"
               alt="DFTBA Records Front Page"
-              style="border: 3px solid #304b42"
+              style="width: 100%"
             />
-            <p>
-              DFTBA Records is an online company that partners with internet
-              creators to help them sell merch. This shot shows a good use of
-              Visual Hierarchy to draw attention to their announcement of moving
-              to a new warehouse
-            </p>
-          </article>
+            <h2>Visual Hierarchy</h2>
+            <a href="https://DFTBA.com"><h4>DFTBA Records</h4></a>
+          </center>
+          <p>
+            DFTBA Records is an online company that partners with internet
+            creators to help them sell merch. This shot shows a good use of
+            Visual Hierarchy to draw attention to their announcement of moving
+            to a new warehouse
+          </p>
         </div>
 
-        <div class="column">
-          <article class="card">
-            <h2>Fitts's Law</h2>
-            <a href="https://castbox.fm"><h3>Castbox</h3></a>
+        <div class="card">
+          <center>
             <img
               src="https://i.ibb.co/k4ngQQq/Castbox-resize.jpg"
               alt="Castbox Show Feed"
-              style="border: 3px solid #304b42"
+              style="width: 100%"
             />
-            <p>
-              Castbox is a podcast platform. Their goal is to get you to listen
-              to podcasts using their app. Therefore, according to Fitts's Law,
-              their call to action button is relatively large, placed in an
-              easily accessed area and in a contrasting color. All of this draws
-              your attention to it and makes it easier to use.
-            </p>
-          </article>
+            <h2>Fitts's Law</h2>
+            <a href="https://castbox.fm"><h3>Castbox</h3></a>
+          </center>
+          <p>
+            Castbox is a podcast platform. Their goal is to get you to listen to
+            podcasts using their app. Therefore, according to Fitts's Law, their
+            call to action button is relatively large, placed in an easily
+            accessed area and in a contrasting color. All of this draws your
+            attention to it and makes it easier to use.
+          </p>
         </div>
-
-        <div class="column">
-          <article class="card">
-            <h2>Contrast</h2>
-            <a href="https://Zillow.com"><h3>Zillow Landing Page</h3></a>
+        <div class="card">
+          <center>
             <img
               src="https://i.ibb.co/hDxkHMD/Zillow-resize.jpg"
               alt="DFTBA Records Front Page"
-              style="border: 3px solid #304b42"
+              style="width: 100%"
             />
-            <p>
-              Zillow is a website that hosts real estate listings. Their good
-              use of contrast makes their site easy to understand and use.
-            </p>
-          </article>
+            <h2>Contrast</h2>
+            <a href="https://Zillow.com"><h3>Zillow Landing Page</h3></a>
+          </center>
+          <p>
+            Zillow is a website that hosts real estate listings. Their good use
+            of contrast makes their site easy to understand and use.
+          </p>
         </div>
       </div>
     </main>
