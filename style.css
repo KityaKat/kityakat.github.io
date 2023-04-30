@@ -2,25 +2,25 @@
 @import url('https://fonts.googleapis.com/css?family=Cooper+Black|Montserrat');
 
 :root {
-  --primary-color: #304B42;
-  --secondary-color: #EF9478;
-  --accent1-color: #FBE8AE;
-  --accent2-color: #272D2D;
+  --primary-color: #014A44;
+  --secondary-color: #03A3AF;
+  --accent1-color: #29AB87;
+  --accent2-color: #BF410B;
 
   
   --heading-font: "Cooper Black", "rockwell", serif;
   --paragraph-font: Montserrat, Helvetica, sans-serif;
 
  
-  --headline-color-on-white: #272D2D;  
-  --headline-color-on-color: #FBE8AE; 
-  --paragraph-color-on-white: #272D2D; 
-  --paragraph-color-on-color: #FBE8AE; 
-  --text-background-color: #304B42;
+  --headline-color-on-white: #BF410B;  
+  --headline-color-on-color: #F08080; 
+  --paragraph-color-on-white: #BF410B; 
+  --paragraph-color-on-color: #F08080; 
+  --text-background-color: #014A44;
   }
 
 html {
-  background-color: var(--accent1-color);
+  background-color: #014A44;
 }
 content{
   max-width: 960px;
@@ -29,65 +29,69 @@ content{
 body {
   max-width: 960px;
   margin: 0 auto;
-  background-color: #304B42;
+  background-color: #014A44;
   padding: 1em;
 }
 img {
   max-width: 100%;
+  margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
-  color: #4BA581;
+  font-size: 25px;
+  color: #F9E3DC;
 }
 h1{
   text-align: center;
+  font-size: 60px;
+  text-shadow: 5px 5px 2px #290E00;
 }
 hr{
   border: 5px solid #EF9478;
   border-radius: 2.5px;
 }
 header {
-  padding: 3em;
+  padding: 5em;
   text-align: center;
   color: var(--paragraph-color-on-color);
-  background-color: #272D2D; 
+  background-color: #29AB87;
+  border-radius: 2rem;
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
 p {
   font-family: var(--paragraph-font);
-  color: #FBE8AE;
+  font-size:18px;
+  color: #F9E3DC;
   padding: 1em;
 }
 li {
   font-family: var(--paragraph-font);
-  color: #FBE8AE;
+  font-size:18px;
+  color: #F9E3DC;
   padding: 1em;
 }
 a {
   font-family: var(--paragraph-font);
-  color: #EF9478;
+  font-size:18px; 
+  color: #F08080;
   padding: 1em;
   font-size: 10pt;
 }
 footer{
-  background-color: #272D2D;
+  background-color: #29AB87;
   display: grid;
   grid-template-columns: 300px auto;
   justify-items: center;
   align-items: center;
   height: 75px;
+  border-radius: 2rem;
 }
 footer a{
-  color: #EF9478;
+  color: #014A44;
   text-align:center;
 }
-img {
-    max-width: 100%;
-} 
 footer p{
-  font-size: 8pt;
+  font-size: 9pt;
 }
-
-
