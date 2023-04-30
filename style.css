@@ -91,23 +91,3 @@ footer p{
 }
 
 
-/* To create the "card" effect */
-.card{
-   border-radius: 3px; 
-   background-color: #304B42;
-   font-family: "Montserrat", "Helvetica", sans-serif;
-   overflow: hidden;
-}
-.column {
-   float: left;
-   width: 30%;
-   padding: 0 10px;
-}
-.row {
-   margin: 0 -5px;
-}
-.row:after {
-   content: "";
-   display: table;
-   clear: both;
-}
