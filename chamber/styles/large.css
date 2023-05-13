@@ -1,0 +1,18 @@
+@media only screen and (min-width: 900px) {
+  social {
+    width: 20em;
+    margin-right: 5%;
+  }
+  social img:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+
+  main {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "events hero hero spotlights"
+      "weather hero hero spotlights"
+      "join news news spotlights";
+  }
+}
