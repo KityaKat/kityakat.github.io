@@ -129,8 +129,8 @@ main {
 }
 @media screen and (max-width: 600px) {
   h1,
-  join,
-  spotlight3 {
+  .join,
+  .spotlight3 {
     display: none;
   }
 }
