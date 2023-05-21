@@ -114,12 +114,14 @@ main {
     "spotlights";
 }
 .left-column,
+.middle-column,
 .right-column {
   background-color: transparent;
   border: none;
 }
 @media screen and (max-width: 800px) {
   .left-column,
+  .middle-column,
   .right-column {
     width: 100%;
     padding: 0;
