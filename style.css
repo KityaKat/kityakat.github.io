@@ -3,16 +3,16 @@
 :root {
   --primary-color: #014a44;
   --secondary-color: #29ab87;
-  --accent1-color: #f08080;
+  --accent1-color: #f5aeae;
   --accent2-color: #bf410b;
 
   --heading-font: "Cooper Black", "rockwell", serif;
   --paragraph-font: Montserrat, Helvetica, sans-serif;
 
   --headline-color-on-white: #bf410b;
-  --headline-color-on-color: #f08080;
+  --headline-color-on-color: #333333;
   --paragraph-color-on-white: #bf410b;
-  --paragraph-color-on-color: #f08080;
+  --paragraph-color-on-color: #f5aeae;
   --text-background-color: #014a44;
 }
 
@@ -46,7 +46,6 @@ h6 {
 h1 {
   text-align: center;
   font-size: 5vw;
-  text-shadow: 5px 5px 2px #290e00;
 }
 hr {
   border: 5px solid #ef9478;
@@ -76,24 +75,28 @@ li {
   color: #f9e3dc;
   padding: 1em;
 }
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
 a {
   font-family: var(--paragraph-font);
   font-size: 1vw;
-  color: #f08080;
+  color: #f5aeae;
   padding: 1em;
   font-size: 10pt;
 }
 
 @media only screen and (max-width: 600px) {
-  p {
+  p,
+  a,
+  li,
+  footer {
     font-size: 3.5vw;
   }
-  li {
-    font-size: 3.5vw;
-  }
-  a {
-    font-size: 3.5vw;
-  }
+  
   h1,
   h2,
   h3,
@@ -104,18 +107,18 @@ a {
   }
 }
 footer {
-  background-color: #29ab87;
   display: grid;
-  grid-template-columns: 300px auto;
   justify-items: center;
   align-items: center;
+  text-align: center;
   height: 75px;
   border-radius: 2rem;
 }
 footer a {
-  color: #014a44;
+  color: #f9e3dc;
   text-align: center;
 }
 footer p {
-  font-size: 9pt;
+  font-size: 0.75vw;
+  color: #f9e3dc;
 }
