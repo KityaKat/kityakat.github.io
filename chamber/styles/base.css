@@ -103,7 +103,7 @@ main {
 .spotlight2 img,
 .spotlight1 img,
 .hero img{
-  width: 100%;
+  width: 90%;
   height: auto;
   object-fit: cover;
   overflow: hidden;
