@@ -118,6 +118,11 @@ main {
   width: 50%;
   height: auto;
 }
+left-column,
+right-column,{
+  width: 25%;
+  height: auto;
+}
 .spotlight1,
 .spotlight2,
 .spotlight3 {
