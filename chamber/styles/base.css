@@ -114,6 +114,10 @@ main {
   background-color: transparent;
   border: none;
 }
+.middle-column{
+  width: 50%;
+  height: auto;
+}
 .spotlight1,
 .spotlight2,
 .spotlight3 {
