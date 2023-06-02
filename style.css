@@ -122,3 +122,9 @@ footer p {
   font-size: 0.75vw;
   color: #f9e3dc;
 }
+.lazyload{
+  display:grid;
+  grid-template-columns:1;
+  justify-items: center;
+}
+
