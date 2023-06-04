@@ -91,7 +91,9 @@ ul {
   font-family: "Times New Roman", serif;
   color: #656e6d;
 }
-
+.discover-img {
+  text-align: center;
+}
 @media screen and (max-width: 600px) {
   h1,
   .join,
