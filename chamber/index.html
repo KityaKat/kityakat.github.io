@@ -1,15 +1,15 @@
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/base.css" />
-    <link rel="stylesheet" href="./styles/medium.css" />
-    <link rel="stylesheet" href="./styles/large.css" />
+    <link rel="stylesheet" href="base2.css" />
+    <link rel="stylesheet" href="medium.css" />
+    <link rel="stylesheet" href="large.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -28,14 +28,14 @@
       <img
         id="logo"
         src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/logo.png?v=1683165444903"
-        alt="chamber-site-logo"
+        alt="chamber-site-logo" style="width: 50%"
       />
 
       <div id="nav">
         <h1>Cy-Fair Texas Chamber of Commerce</h1>
         <div>
           <div id="date-today">
-            <h3><script src="./scripts/todaysDate.js"></script></h3>
+            <h3><script src="todaysDate.js"></script></h3>
           </div>
           <div id="social">
             <a href="https://facebook.com"
@@ -51,11 +51,11 @@
           </div>
         </div>
         <div class="topnav" id="myTopnav">
-          <script src="./scripts/topnav.js"></script>
-          <a href="#home" class="active">Home</a>
+          <script src="topnav.js"></script>
+          <a href="chamber2.html" class="active">Home</a>
           <a href="#news">News</a>
           <a href="#join">Join Us!</a>
-          <a href="#diectory">Directory</a>
+          <a href="Discover.html">Discover</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -63,15 +63,56 @@
       </div>
     </header>
     <!-- beginning of the main part -->
-     <main>
-      <div class="right-column">
+    <main>
+      <div class="wrapper">
         <div class="events">
           <h2>Upcoming Events</h2>
-          <p>
-            Networking/Business Development Seminar<br>
-            Tuesday, June 6
-          </p>
+          <ul>
+            <li>An Event</li>
+            <li>Another Event</li>
+            <li>Yet Another Event</li>
+          </ul>
         </div>
+        <div class="hero">
+          <center>
+            <h2>What can the Chamber do for you?</h2>
+            <picture>
+            <img
+              id="hero-img"
+              src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/Medium%20Stained%20Glass.jpg?v=1683855417262"
+              alt="Placeholder Image" style="width: 100%"
+            />
+              </picture>
+          </center>
+          <button id="call-to-action">
+            <p>Learn More</p>
+          </button>
+        </div>
+        
+        <div class="spotlights">
+          <h2>Spotlights</h2>
+          <div class="spotlight1">
+            <img
+              src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/Tacos.avif?v=1685220461449" style="width: 50%"
+            />
+            <h3>La Mesa <br />Tex-Mex Cafe</h3>
+          </div>
+          <div class="spotlight2">
+            <img
+              src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/daycare.avif?v=1685220458513" style="width: 50%"
+            />
+            <h3>Bright Beginnings<br />Daycare</h3>
+          </div>
+          <div class="spotlight3">
+            <img
+              class="spotlight"
+              alt="merry maids"
+              src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/Cleaning.avif?v=1685220451042" style="width: 50%"
+            />
+            <h3>Merry Maids<br />Housecleaners</h3>
+          </div>
+        </div>
+        
         <div class="weather">
           <h2>Weather</h2>
           ☀️ 🌡️
@@ -79,23 +120,8 @@
         <div class="join">
           <h2>Join Us!</h2>
         </div>
-      </div>
-      <div class="middle-column">
-        <!--the middle column is the biggest one. it starts here-->
-        <div class="hero">
-          <center>
-            <h2>What can the Chamber do for you?</h2>
-            <img
-              id="hero-img"
-              src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/Medium%20Stained%20Glass.jpg?v=1683855417262"
-              alt="Placeholder Image"
-              style="width: 50%"
-            />
-          </center>
-          <div id="call-to-action">
-            <p>Learn More</p>
-          </div>
-        </div>
+
+        
         <div class="news">
           <h2>Latest News</h2>
           <p>
@@ -114,44 +140,18 @@
             at in tellus integer. Porttitor leo a diam sollicitudin tempor id.
             Justo nec ultrices dui sapien eget mi proin sed libero. Risus quis
             varius quam quisque. Id porta nibh venenatis cras sed. Ullamcorper
-            morbi tincidunt ornare massa eget.<br /><br />
-
-            Donec enim diam vulputate ut pharetra sit. Velit dignissim sodales
-            ut eu sem. Dui accumsan sit amet nulla facilisi morbi tempus
-            iaculis. Sapien faucibus et molestie ac feugiat sed. Feugiat in ante
-            metus dictum at tempor commodo ullamcorper a. Dolor sit amet
-            consectetur adipiscing elit duis. Leo vel orci porta non pulvinar
-            neque. Tincidunt id aliquet risus feugiat in. Placerat vestibulum
-            lectus mauris ultrices. Nibh mauris cursus mattis molestie a
-            iaculis. Nunc eget lorem dolor sed. Praesent semper feugiat nibh sed
-            pulvinar. Ipsum dolor sit amet consectetur. Nulla pellentesque
-            dignissim enim sit amet.
+            morbi tincidunt ornare massa eget.
           </p>
         </div>
-      </div>
-      <div class="left-column">
-        <div class="spotlights">
-          <h2>Spotlights</h2>
-          <div class="spotlight1">
-            <img src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/Tacos.avif?v=1685220461449">
-            <h3>La Mesa <br>Tex-Mex Cafe</h3>
-          </div>
-          <div class="spotlight2">
-            <img src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/daycare.avif?v=1685220458513">
-            <h3>Bright Beginnings<br>Daycare</h3>
-          </div>
-          <div class="spotlight3">
-            <img class="spotlight" alt="merry maids" src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/Cleaning.avif?v=1685220451042" >
-            <h3>Merry Maids<br>Housecleaners</h3>
-          </div>
-        </div>
+
+        
       </div>
     </main>
     <footer>
       <p>
         ©
-        <script src="./scripts/Date-Script.js"></script>
-        <a href="https://kityakat.github.io/index.html">Return to Portal</a>
+        <script src="Date-Script.js"></script>
+        <a href="index.html">Return to Portal</a>
       </p>
     </footer>
   </body>
