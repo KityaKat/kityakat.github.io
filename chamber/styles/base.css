@@ -13,6 +13,7 @@
 .topnav {
   background-color: #0c2967;
   overflow: hidden;
+  border: none;
 }
 
 .topnav a {
@@ -66,7 +67,9 @@
 header {
   font-family: "Cinzel", serif;
   text-align: center;
+  border: none;
 }
+
 h1 {
   font-size: 4vw;
 }
@@ -88,55 +91,7 @@ ul {
   font-family: "Times New Roman", serif;
   color: #656e6d;
 }
-main {
-  display: grid;
-  columns: 3;
-  grid-template-areas:
-    "hero"
-    "events"
-    "weather"
-    "join"
-    "news"
-    "spotlights";
-}
-.spotlight3 img,
-.spotlight2 img,
-.spotlight1 img,
-.hero img{
-  width: 90%;
-  height: auto;
-  object-fit: cover;
-  overflow: hidden;
-}
-.left-column,
-.middle-column,
-.right-column {
-  background-color: transparent;
-  border: none;
-}
-.middle-column{
-  width: 50%;
-  height: auto;
-}
-left-column,
-right-column,{
-  width: 25%;
-  height: auto;
-}
-.spotlight1,
-.spotlight2,
-.spotlight3 {
-  border: none;
-}
 
-@media screen and (max-width: 800px) {
-  .left-column,
-  .middle-column,
-  .right-column {
-    width: 100%;
-    padding: 0;
-  }
-}
 @media screen and (max-width: 600px) {
   h1,
   .join,
@@ -147,7 +102,7 @@ right-column,{
 main div {
   margin: 0.3em;
   background-color: #faf8d4;
-  padding: 0.5em;
+  padding: 1em;
   border: 2px solid #0c2967;
   font-style: italic;
   padding: 3em;
