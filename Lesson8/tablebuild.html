@@ -1,70 +1,108 @@
 <!DOCTYPE html>
-<html>
-<style>
-table {
-  border-collapse: collapse;
-  text-align: center;
-  font-family: "century-gothic", sans-serif;
-  width: 50%;
-}
-th{
-  background-color: #433147;
-  color: ivory;
-  border: none;
-  
-  }
-tr:nth-child(odd) {
-  background-color: #e3d5e6;
-}
-tr {
-  border-bottom: 1px solid #000;
-}
-</style>
-<body>
-<center>
-<h2>W08 Activity: Table Build</h2>
-<div class ="table">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table-exercise</title>
+    <style>
+      :root {
+        --back: #433147;
+        --back2: #6d5473;
+        --foredark: hsla(0, 0%, 10%, 1);
+        --forelight: hsla(0, 0%, 100%, 1);
+        --border: hsla(0, 0%, 20%, 0.8);
+        --borderlight: hsla(0, 0%, 33%, 0.3);
+        --shadow: hsl(0, 0%, 50%);
+        --zebra: #e3d5e6;
+      }
+      body {
+        font-family: "Century Gothic", serif;
+      }
 
-<table>
-  <caption>Table 1: Account Feature Comparison</caption>
-  <thead>
-  <th colspan="4">Acme Wildwest Services</th>
-  <tr>
-    <th class ="empty"> </th>
-    <th>Basic</th>
-    <th>Premium</th>
-    <th>Deluxe</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>Feature 1</td>
-    <td>✔️</td>
-    <td>✔️</td>
-    <td>✔️</td>
-  </tr>
-  <tr>
-    <td>Feature 2</td>
-    <td>❌</td>
-    <td>✔️</td>
-    <td>✔️</td>
-  </tr>
-   <tr>
-    <td>Feature 3</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>✔️</td>
-  </tr>
-  </tbody>
-</table>
-</div>
-  </center>
- <footer>
-        <p>
-          ©
-          <script src="https://kityakat.github.io/Date-Script.js"></script>
-          <a href="https://kityakat.github.io/index.html">Return to Portal</a>
-        </p>
-      </footer>
-</body>
+      table {
+        margin: 10px auto;
+        border: thin solid var(--border);
+        box-shadow: 0 0 10px var(--shadow);
+        border-collapse: collapse;
+      }
+
+      caption {
+        padding: 10px;
+        caption-side: bottom;
+        color: var(--back);
+        font-size: 0.85rem;
+      }
+
+      tr:first-child th,
+      .highlight {
+        background-color: var(--back);
+        color: var(--forelight);
+      }
+
+      th,
+      td {
+        padding: 7px 15px;
+        border: 1px solid var(--borderlight);
+      }
+
+      th {
+        background-color: var(--back2);
+        font-size: larger;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: var(--zebra);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Table 1: Account Feature Comparison
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="4" scope="colgroup">ACME Wildwest Services</th>
+        </tr>
+        <tr>
+          <th scope="col" style="background-color: #433147;"></th>
+          <th scope="col">Basic</th>
+          <th scope="col">Premium</th>
+          <th scope="col">Deluxe</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Feature 1</td>
+          <td>✔️</td>
+          <td>✔️;</td>
+          <td>✔️</td>
+        </tr>
+        <tr>
+          <td>Feature 2</td>
+          <td>❌</td>
+          <td>✔️</td>
+          <td>✔️</td>
+        </tr>
+        <tr>
+          <td>Feature 3</td>
+          <td>❌</td>
+          <td>❌</td>
+          <td>✔️</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <footer>
+    <p>
+      ©
+      <script src="https://kityakat.github.io/Date-Script.js"></script>
+      <a href="https://kityakat.github.io/index.html">Return to Portal</a>
+    </p>
+  </footer>
 </html>
