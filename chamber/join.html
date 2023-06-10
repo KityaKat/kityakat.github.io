@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="medium.css" />
+    <link rel="stylesheet" href="large.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cy-Fair Chamber of Commerce Project by Kit Hardwick for WDD 230"
+    />
+    <title>Join the Cy-Fair Chamber</title>
+  </head>
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/logo.png?v=1683165444903"
+        alt="chamber-site-logo"
+        style="width: 50%"
+      />
+
+      <div id="nav">
+        <h1>Join Today</h1>
+        <h2>See What the Chamber can Do for You</h2>
+
+        <div class="topnav" id="myTopnav">
+          <script src="topnav.js"></script>
+          <a href="index.html" class="active">Home</a>
+          <a href="#news">News</a>
+          <a href="join.html">Join Us!</a>
+          <a href="discover.html">Discover</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="joinForm">
+        <form id="membershipForm" method="get" action="thankyou.html">
+          <label for="firstName">First Name</label><br />
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            required
+          /><br /><br />
+
+          <label for="lastName">Last Name</label><br />
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            required
+          /><br /><br />
+
+          <label for="position">Position/Title</label><br />
+          <input
+            type="text"
+            id="position"
+            name="position"
+            pattern="[A-Za-z\s\-]{7,}"
+          /><br /><br />
+
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Someone@mail.com"
+          /><br /><br />
+
+          <label for="phone">Cell Phone Number</label><br />
+          <input type="tel" id="phone" name="phone" required /><br /><br />
+
+          <label for="business">Business Name</label><br />
+          <input
+            type="text"
+            id="business"
+            name="business"
+            required
+          /><br /><br />
+
+          <label for="description">Business Description</label><br />
+          <textarea id="description" name="description" rows="4"></textarea
+          ><br /><br />
+
+          <label for="membership">Membership Level</label><br />
+          <input type="radio" id="NP" name="tier" value="NP" />
+          <label for="NP">NP</label><br />
+          <input type="radio" id="bronze" name="tier" value="bronze" />
+          <label for="bronze">Bronze</label><br />
+          <input type="radio" id="silver" name="tier" value="silver" />
+          <label for="silver">Silver</label><br />
+          <input type="radio" id="gold" name="tier" value="gold" />
+          <label for="gold">Gold</label><br /><br />
+          <input id="submit" type="submit" value="Submit" />
+          <input type="reset" />
+        </form>
+      </div>
+      <div class="benefits">
+        <h2>Our Membership Tiers</h2>
+        <div>
+          <h3>NP (Non-Profit) Tier</h3>
+          <ul>
+            <li>Certification of Membership</li>
+            <li>Listing in our Membership Directory</li>
+            <li>2 Tickets to All Quarterly Members' Only Events</li>
+            <li>Online Resource Library</li>
+            <li>Promotional Post on Social Media</li>
+            <li>Membership Mailing List</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Bronze Tier</h3>
+          <ul>
+            <li>All the NP Benefits</li>
+            <li>Listing in Membership Directory with Grayscale Logo</li>
+            <li>2 Tickets to Annual Members' Gala</li>
+            <li>Basic Website Support</li>
+            <li>4 Tickets to All Quarterly Members' Only Events</li>
+            <li></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Silver Tier</h3>
+          <ul>
+            <li>All the Bronze Benefits</li>
+            <li>Listing in Membership Directory with Color Logo</li>
+            <li>6 Tickets to Annual Members' Gala</li>
+            <li>Expanded Website Support</li>
+            <li>8 Tickets to All Quarterly Members' Only Events</li>
+            <li></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Gold Tier</h3>
+          <ul>
+            <li>All the Silver Benefits</li>
+            <li>Highlighted Listing in Directory</li>
+            <li>Full Table at Annual Members' Gala</li>
+            <li>Dedicated Website Support</li>
+            <li>10 Tickets to All Quarterly Members' Only Events</li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
