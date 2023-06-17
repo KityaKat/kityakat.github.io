@@ -1,4 +1,4 @@
-const url = 'directory-info.json';  
+const url = 'chamber/scripts/directory-info.json';  
 
 async function getCompaniesData() {
     const response = await fetch(url);
