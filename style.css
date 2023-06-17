@@ -24,7 +24,6 @@ content {
   margin: 0 auto;
 }
 body {
-  max-width: 960px;
   margin: 0 auto;
   background-color: #014a44;
   padding: 1em;
@@ -52,6 +51,7 @@ hr {
   border-radius: 2.5px;
 }
 header {
+  max-width: 960px;
   display: flex;
   padding: 5em;
   text-align: center;
