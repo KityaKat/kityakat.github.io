@@ -133,6 +133,17 @@ footer p {
   grid-column-gap: .5em;
   grid-row-gap: .5em;
 }
+.weather{
+  background-color: #e5b39d;
+  border: 5px solid #f9e3dc;
+  border-radius: 2rem;
+  margin: 1em;
+  padding: 2em;
+  text-align: center;
+}
+.weather p, .weather h2{
+  color: #333333;
+}
 section{
   border: 2px solid #f9e3dc;
   border-radius: 2rem;
