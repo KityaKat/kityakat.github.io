@@ -140,6 +140,7 @@ footer p {
   margin: 1em;
   padding: 2em;
   text-align: center;
+  max-width: 1000px;
 }
 .weather p, .weather h2{
   color: #333333;
