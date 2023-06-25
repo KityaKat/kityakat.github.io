@@ -5,70 +5,96 @@
       "address": "17790 Katy Fwy Katy, TX 77094",
       "phone": "(281) 398-8100",
       "website": "https://www.tonystxmx.com/",
-      "image": "https://static.wixstatic.com/media/3ecb19_9e300dc4b4f745b8bdb02305cb139e21~mv2.png/v1/fill/w_180,h_86,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Tony's%20Tex-Mex.png"      
+      "image": "https://static.wixstatic.com/media/3ecb19_9e300dc4b4f745b8bdb02305cb139e21~mv2.png/v1/fill/w_180,h_86,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Tony's%20Tex-Mex.png",
+      "membership-level": "3"
     },
     {
       "name": "Blue Willow Bookshop",
       "address": "14532 Memorial Dr Houston, Texas 77079",
       "phone": "(281) 497-8675",
       "website": "https://www.bluewillowbookshop.com/",
-      "image": "https://lh5.googleusercontent.com/-0X9ifsmIKzw/AAAAAAAAAAI/AAAAAAAAAAA/59--N7gzHTc/s44-p-k-no-ns-nd/photo.jpg"
+      "image": "https://lh5.googleusercontent.com/-0X9ifsmIKzw/AAAAAAAAAAI/AAAAAAAAAAA/59--N7gzHTc/s44-p-k-no-ns-nd/photo.jpg",
+      "membership-level": "2"
     },
     {
       "name": "Summer Moon Coffee",
       "address": "8940 Barker Cypress Rd #190, Cypress, TX 77433",
       "phone": "(346) 513-6404",
       "website": "https://summermooncoffee.com/",
-      "image": "https://is5-ssl.mzstatic.com/image/thumb/Purple126/v4/24/93/92/24939282-edf9-1fea-9dbf-eac53ccdd745/source/150x150bb.jpg"      
+      "image": "https://is5-ssl.mzstatic.com/image/thumb/Purple126/v4/24/93/92/24939282-edf9-1fea-9dbf-eac53ccdd745/source/150x150bb.jpg",
+      "membership-level": "2"
     },
     {
       "name": "Big Ben's Pizzeria",
       "address": "5431 Barker Cypress Rd Ste 200, Houston, TX 77084",
       "phone": "(281) 858-1851",
       "website": "https://bigbenspizzeria.us/",
-      "image": "https://bigbenspizzeria.us/wp-content/uploads/2020/07/Big_Bens_Pizzeria.png"
+      "image": "https://bigbenspizzeria.us/wp-content/uploads/2020/07/Big_Bens_Pizzeria.png",
+      "membership-level": "2"
     },
     {
       "name": "The Comic Vault",
       "address": "8350 Fry Rd, Cypress, TX 77433",
       "phone": "(832) 220-6509",
       "website": "https://thecomicvault.com/",
-      "image": "https://thecomicvault.files.wordpress.com/2021/01/the-comic-vault.png?w=150"      
+      "image": "https://thecomicvault.files.wordpress.com/2021/01/the-comic-vault.png?w=150",
+      "membership-level": "1"
     },
     {
       "name": "Learning Express",
       "address": "25704 Northwest Fwy, Cypress, TX 77429",
       "phone": "(281) 758-2232",
       "website": "https://learningexpress.com/cypress",
-      "image": "https://learningexpress.com/pub/media/logo/default/le-logo-02.png"
+      "image": "https://learningexpress.com/pub/media/logo/default/le-logo-02.png",
+      "membership-level": "1"
     },
     {
       "name": "Katy Family Smiles",
       "address": "5803 N Fry Rd #110, Katy, TX 77449",
       "phone": "(832) 427-6937",
       "website": "https://www.katyfamilysmiles.com/",
-      "image": "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/24/25/5a/24255a62-40dd-8a13-1c8c-895867e8d74f/source/150x150bb.jpg"
+      "image": "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/24/25/5a/24255a62-40dd-8a13-1c8c-895867e8d74f/source/150x150bb.jpg",
+      "membership-level": "2"
     },
     {
       "name": "Group 1 Automotive",
       "address": "6161 Rothway St Houston, TX 77040",
       "phone": "(713) 360-5400",
       "website": "https://www.group1auto.com/",
-      "image": "https://media.licdn.com/dms/image/C510BAQEBGY9vBOXbrQ/company-logo_200_200/0/1519856332037?e=2147483647&v=beta&t=oX07cVlJhprhH9tNdE0B1CLMIyy7rkX0Dmm0E6elA8o"
+      "image": "https://media.licdn.com/dms/image/C510BAQEBGY9vBOXbrQ/company-logo_200_200/0/1519856332037?e=2147483647&v=beta&t=oX07cVlJhprhH9tNdE0B1CLMIyy7rkX0Dmm0E6elA8o",
+      "membership-level": "3"
     },
     {
       "name": "Cy-Fair Driving School",
       "address" : "17036 W Little York Rd, Houston, TX 77084",
       "phone" : "(832) 647-3526",
       "website" : "https://www.cyfairdrivingschool.com/",
-      "image" : "https://www.cyfairdrivingschool.com/images/cyfairdrivingschool-logo.svg"
+      "image" : "https://www.cyfairdrivingschool.com/images/cyfairdrivingschool-logo.svg",
+      "membership-level": "1"
       },
     {
      "name" : "Proud Pie",
       "address" : "3522 S Mason Rd, Katy, TX 77450",
       "phone" : "(281) 392-2203",
       "website" : "proudpie.com",
-      "image" : "https://images.getbento.com/accounts/8be9edb9efa1f6456afa66bbd04bb37e/media/images/9069proud-pie_Logo.png?w=150"
+      "image" : "https://images.getbento.com/accounts/8be9edb9efa1f6456afa66bbd04bb37e/media/images/9069proud-pie_Logo.png?w=150",
+      "membership-level": "3"
+      },
+    {
+     "name" : "The Barkery Market",
+      "address" : "15703 Longenbaugh Dr, Ste C Houston, Texas 77095",
+      "phone" : "(281) 861-4033",
+      "website" : "https://www.thebarkerymarket.com/",
+      "image" : "https://www.thebarkerymarket.com/uploads/b/163763c2199dda6487bcdcc3f468ee5d8badca19eb78830d846e83b8e27bcb88/Copy%20of%20Barkery%20%283%29_1684796990.png?width=120&optimize=medium",
+      "membership-level": "1"
+      },
+    {
+     "name" : "The Hope Chest Resale Market",
+      "address" : "12015 Barker Cypress Rd, Cypress, TX 77433",
+      "phone" : "(281) 758-1003",
+      "website" : "https://www.cy-hope.org/cypress",
+      "image" : "https://images.squarespace-cdn.com/content/v1/62a2139dd8f19e146299f491/dddb784c-39a9-45b7-8b21-b88eb40991a9/Copy+of+logo+with+new+mission+no+background.png?format=140w",
+      "membership-level": "0"
       }
     ]
   }
