@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
+
+:root {
+  --primary-color: #656e6d;
+  --secondary-color: #0c2967;
+  --accent1-color: #5b0a0a;
+  --accent2-color: #faf8d4;
+
+  --heading-font: "Cinzel", serif;
+  --paragraph-font: "Times New Roman", serif;
+
+  --headline-color-on-white: #000000;
+  --headline-color-on-color: #faf8d4;
+  --paragraph-color-on-white: #5b0a0a;
+  --paragraph-color-on-color: #ffffff;
+  --text-background-color: #5b0a0a;
+  --nav-link-color: #ffffff;
+  --nav-background-color: #245d39;
+  --nav-hover-link-color: #2c2b2b;
+  --nav-hover-background-color: #3e8458;
+}
+
+html {
+  background-color: #ffffff;
+}
+content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 1em;
+}
+img {
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: black;
+}
+
+header {
+  padding: 0;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--text-background-color);
+  align-items: center;
+  display: grid;
+}
+header > h1,
+header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+}
+footer {
+  align-items: right;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999999;
+  height: 2em;
+}
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--text-background-color);
+  color: var(--paragraph-color-on-color);
+}
+.topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #0c2967;
+  text-align: center;
+  font-family: "cinzel", serif;
+  border-style: none none solid none;
+  margin: .25em;
+  width: 25%;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+
+.topnav a:hover {
+  border-style: none none solid none;
+  border-color: #5b0a0a;
+  background-color: #faf8d4;
+}
