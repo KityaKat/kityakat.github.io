@@ -1,4 +1,4 @@
-const url = 'chamber/scripts/directory-info.json';  
+const url = 'https://kitykat.github.io/chamber/scripts/directory-info.json';  
 
 async function getCompaniesData() {
     const response = await fetch(url);
