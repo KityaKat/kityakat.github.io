@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" sizes="32x32" href="./chamber/images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./chamber/images/favicon-16x16.png" />
-    <link rel="stylesheet" href="./styles/base.css" />
-    <link rel="stylesheet" href="./styles/medium.css" />
-    <link rel="stylesheet" href="./styles/large.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel"
-      rel="stylesheet"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="normalize.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,24 +26,44 @@
   </head>
   <body>
     <header>
-      <img
-        id="logo"
-        src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/logo.png?v=1683165444903"
-        alt="chamber-site-logo"
-        style="width: 50%"
-      />
-
+      <div class="header-top">
+        <a href="index.html"
+          ><img
+            id="logo"
+            src="https://kityakat.github.io/chamber/images/logo.png"
+            alt="chamber-site-logo"
+        /></a>
+        <h1>Join the Chamber Today</h1>
+        <br>
+        
+        <div id="social">
+          <a href="https://facebook.com"
+            ><img
+              src="https://kityakat.github.io/chamber/images/facebook-5-128.gif"
+              style="width: 4em"
+          /></a><br>
+          <a href="https://linkedin.com"
+            ><img
+              src="https://kityakat.github.io/chamber/images/linkedin-4-128.gif"
+              style="width: 4em"
+          /></a><br>
+        </div>
+      </div>
+      <h2>
+          See What the Chamber can do for You
+        </h2>
       <div id="nav">
-        <h1>Join Today</h1>
-        <h2>See What the Chamber can Do for You</h2>
+        <div></div>
+        <div id="date-today">
+          <h3><script src="todaysDate.js"></script></h3>
+        </div>
 
-       <div class="topnav" id="myTopnav">
-          <script src="./scripts/topnav.js"></script>
+        <div class="topnav" id="myTopnav">
           <a href="index.html" class="active">Home</a>
-          <a href="#news">News</a>
           <a href="join.html">Join Us!</a>
           <a href="discover.html">Discover</a>
           <a href="directory.html">Directory</a>
+          <a href="contact.html">Contact</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -52,7 +72,7 @@
     </header>
     <div class="wrapper">
       <div class="joinForm">
-        <form id="membershipForm" method="get" action="thankyou.html">
+        <form id="membershipForm" method="get" action="thank-you.html">
           <label for="firstName">First Name</label><br />
           <input
             type="text"
@@ -102,22 +122,22 @@
           ><br /><br />
 
           <label for="membership">Membership Level</label><br />
-          <input type="radio" id="NP" name="tier" value="NP" />
-          <label for="NP">NP</label><br />
-          <input type="radio" id="bronze" name="tier" value="bronze" />
-          <label for="bronze">Bronze</label><br />
-          <input type="radio" id="silver" name="tier" value="silver" />
-          <label for="silver">Silver</label><br />
-          <input type="radio" id="gold" name="tier" value="gold" />
-          <label for="gold">Gold</label><br /><br />
-          <input id="submit" type="submit" value="Submit" />
+          <label for="NP">NP</label>
+          <input type="radio" id="NP" name="tier" value="NP" /><br />
+          <label for="bronze">Bronze</label>
+          <input type="radio" id="bronze" name="tier" value="bronze" /><br />
+          <label for="silver">Silver</label>
+          <input type="radio" id="silver" name="tier" value="silver" /><br />
+          <label for="gold">Gold</label>
+          <input type="radio" id="gold" name="tier" value="gold" /><br /><br />
+          <input id="submit" type="submit" value="Submit" href="thank-you.html"/>
           <input type="reset" />
         </form>
       </div>
       <div class="benefits">
         <h2>Our Membership Tiers</h2>
         <div>
-          <h3>NP (Non-Profit) Tier</h3>
+          <h3>NP (Non-Profit) Tier - Free</h3>
           <ul>
             <li>Certification of Membership</li>
             <li>Listing in our Membership Directory</li>
@@ -128,7 +148,7 @@
           </ul>
         </div>
         <div>
-          <h3>Bronze Tier</h3>
+          <h3>Bronze Tier - $4.99 (monthly) or $54.99 (annually) </h3>
           <ul>
             <li>All the NP Benefits</li>
             <li>Listing in Membership Directory with Grayscale Logo</li>
@@ -139,7 +159,7 @@
           </ul>
         </div>
         <div>
-          <h3>Silver Tier</h3>
+          <h3>Silver Tier $6.99 (monthly) or $79.99 (annually)</h3>
           <ul>
             <li>All the Bronze Benefits</li>
             <li>Listing in Membership Directory with Color Logo</li>
@@ -150,7 +170,7 @@
           </ul>
         </div>
         <div>
-          <h3>Gold Tier</h3>
+          <h3>Gold Tier $9.99 (monthly) or $114.99 (annually)</h3>
           <ul>
             <li>All the Silver Benefits</li>
             <li>Highlighted Listing in Directory</li>
@@ -165,8 +185,8 @@
     <footer>
       <p>
         ©
-        <script src="./scripts/Date-Script.js"></script>
-        <a href="https://kityakat.github.io/index.html">Return to Portal</a>
+        <script src="Date-Script.js"></script>
+        <a href="https://wakeful-malachite-herring.glitch.me/index.html">Return to Portal</a>
       </p>
     </footer>
   </body>
