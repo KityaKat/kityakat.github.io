@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cy-Fair Chamber of Commerce Project by Kit Hardwick for WDD 230"
+    />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <a href="index.html"
+          ><img
+            id="logo"
+            src="https://kityakat.github.io/chamber/images/logo.png"
+            alt="chamber-site-logo"
+        /></a>
+
+        <br />
+
+        <div id="social">
+          <a href="https://facebook.com"
+            ><img
+              src="https://kityakat.github.io/chamber/images/facebook-5-128.gif"
+              style="width: 4em" /></a
+          ><br />
+          <a href="https://linkedin.com"
+            ><img
+              src="https://kityakat.github.io/chamber/images/linkedin-4-128.gif"
+              style="width: 4em" /></a
+          ><br />
+        </div>
+      </div>
+      <div id="nav">
+        <div></div>
+        <div id="date-today">
+          <h3><script src="script/todays-date.js"></script></h3>
+        </div>
+
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="active">Home</a>
+          <a href="join.html">Join Us!</a>
+          <a href="discover.html">Discover</a>
+          <a href="directory.html">Directory</a>
+          <a href="contact.html">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="contact">
+          <h2>Contact Us</h2>
+          <br /><br /><br /><br /><br />
+          <h3>Address</h3>
+          <p>8711 Hwy 6 N #120</p>
+          <p>Houston, TX 77095</p>
+          <h3>Phone Number</h3>
+          <p>713-555-1234</p>
+          <h3>Email</h3>
+          <p>Contact@cy-fairchamber.com</p>
+        </div>
+        <div class="form">
+          <h2>How can We Help?</h2>
+          <form id="membershipForm" method="get" action="thank-you.html">
+            <label for="firstName">First Name</label><br />
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              required
+            /><br /><br />
+
+            <label for="lastName">Last Name</label><br />
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              required
+            /><br /><br />
+
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Someone@mail.com"
+            /><br /><br />
+
+            <label for="phone">Cell Phone Number</label><br />
+            <input type="tel" id="phone" name="phone" required /><br /><br />
+
+            <label for="description">Question or Concern</label><br />
+            <textarea id="description" name="description" rows="4"></textarea
+            ><br /><br />
+
+            <input id="submit" type="submit" value="Submit" />
+            <input type="reset" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        ©
+        <script src="scripts/date-script.js"></script>
+        <a href="https://kityakat.github.io/index.html"
+          >Return to Portal</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
