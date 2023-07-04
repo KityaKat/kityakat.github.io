@@ -1,19 +1,19 @@
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" sizes="32x32" href="./chamber/images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./chamber/images/favicon-16x16.png" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/base.css" />
-    <link rel="stylesheet" href="./styles/medium.css" />
-    <link rel="stylesheet" href="./styles/large.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="normalize.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,38 +25,40 @@
   </head>
   <body>
     <header>
-      <img
-        id="logo"
-        src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/logo.png?v=1683165444903"
-        alt="chamber-site-logo" style="width: 50%"
-      />
+      <div class="header-top">
+        <a href="index.html"
+          ><img
+            id="logo"
+            src="https://kityakat.github.io/chamber/images/logo.png"
+            alt="chamber-site-logo"
+        /></a>
+        <h1>Cy-Fair Texas Chamber of Commerce</h1>
+        <div id="social">
+          <a href="https://facebook.com"
+            ><img
+              src="https://kityakat.github.io/chamber/images/facebook-5-128.gif"
+              style="width: 4em" /></a
+          ><br />
+          <a href="https://linkedin.com"
+            ><img
+              src="https://kityakat.github.io/chamber/images/linkedin-4-128.gif"
+              style="width: 4em" /></a
+          ><br />
+        </div>
+      </div>
 
       <div id="nav">
-        <h1>Cy-Fair Texas Chamber of Commerce</h1>
-        <div>
-          <div id="date-today">
-            <h3><script src="./scripts/todaysDate.js"></script></h3>
-          </div>
-          <div id="social">
-            <a href="https://facebook.com"
-              ><img
-                src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/fb.png?v=1683912951074"
-                style="width: 50px"
-            /></a>
-            <a href="https://instagram.com"
-              ><img
-                src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/Insta.png?v=1683912955776"
-                style="width: 70px"
-            /></a>
-          </div>
+        <div></div>
+        <div id="date-today">
+          <h3><script src="scripts/todays-date.js"></script></h3>
         </div>
-         <div class="topnav" id="myTopnav">
-          <script src="./scripts/topnav.js"></script>
+
+        <div class="topnav" id="myTopnav">
           <a href="index.html" class="active">Home</a>
-          <a href="#news">News</a>
           <a href="join.html">Join Us!</a>
           <a href="discover.html">Discover</a>
           <a href="directory.html">Directory</a>
+          <a href="contact.html">Contact</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -68,39 +70,44 @@
       <div class="wrapper">
         <div class="events">
           <h2>Upcoming Events</h2>
-          <ul>
-            <li>An Event</li>
-            <li>Another Event</li>
-            <li>Yet Another Event</li>
-          </ul>
+          <h3>Summer 2023 Event:<br> Ten Pin Challenge</h3>
+          <img src="https://kityakat.github.io/chamber/images/bowling.avif" class="event-img">
+          
+          <p>
+            Join us for a day of Bowling, Food, and Fun! Grab your co-workers
+            for a fun day of team building and networking!
+          </p>
         </div>
         <div class="hero">
           <center>
-            <h2>What can the Chamber do for you?</h2>
+            <h3 id="hero-heading">What can the Chamber do for you?</h3>
             <picture>
-            <img
-              id="hero-img"
-              src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/Medium%20Stained%20Glass.jpg?v=1683855417262"
-              alt="Placeholder Image" style="width: 100%"
-            />
-              </picture>
+              <img
+                id="hero-img"
+                src="https://kityakat.github.io/chamber/images/Cypress-Tx.jpg"
+                alt="Towne Lake Boardwalk"
+                style="width: 100% height:100%"
+              />
+            </picture>
           </center>
           <button id="call-to-action">
-            <p>Learn More</p>
+            <a href="join.html"> <span>Learn More</span></a>
           </button>
         </div>
-        
+
         <div class="spotlights">
           <h2>Spotlights</h2>
           <div class="spotlight1">
             <img
-              src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/Tacos.avif?v=1685220461449" style="width: 50%"
+              src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/Tacos.avif?v=1685220461449"
+              style="width: 50%"
             />
             <h3>La Mesa <br />Tex-Mex Cafe</h3>
           </div>
           <div class="spotlight2">
             <img
-              src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/daycare.avif?v=1685220458513" style="width: 50%"
+              src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/daycare.avif?v=1685220458513"
+              style="width: 50%"
             />
             <h3>Bright Beginnings<br />Daycare</h3>
           </div>
@@ -108,52 +115,62 @@
             <img
               class="spotlight"
               alt="merry maids"
-              src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/Cleaning.avif?v=1685220451042" style="width: 50%"
+              src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/Cleaning.avif?v=1685220451042"
+              style="width: 50%"
             />
             <h3>Merry Maids<br />Housecleaners</h3>
           </div>
         </div>
-        
+
         <div class="weather">
-          <h2>Weather</h2>
-          ☀️ 🌡️
+          <h2>Weather ☀️ 🌡️</h2>
+          <p>
+            The current temperature in Cypress, Texas is
+            <span id="current-temp"></span> &deg;F
+          </p>
+          <h3>Current Conditions</h3>
+          <figure>
+            <img src="" alt="" id="weather-icon" />
+            <figcaption></figcaption>
+          </figure>
         </div>
         <div class="join">
           <h2>Join Us!</h2>
-        </div>
-
-        
-        <div class="news">
-          <h2>Latest News</h2>
           <p>
-            Amet nulla facilisi morbi tempus. Vulputate odio ut enim blandit
-            volutpat. Nunc lobortis mattis aliquam faucibus. Eu volutpat odio
-            facilisis mauris sit. Sed egestas egestas fringilla phasellus
-            faucibus scelerisque eleifend donec pretium. Mauris sit amet massa
-            vitae tortor condimentum lacinia quis. Risus nec feugiat in
-            fermentum posuere urna nec. Lorem dolor sed viverra ipsum nunc
-            aliquet. Eget nunc lobortis mattis aliquam faucibus purus in massa.
-            Non arcu risus quis varius quam quisque id diam vel. Non diam
-            phasellus vestibulum lorem sed risus ultricies. Lectus mauris
-            ultrices eros in cursus turpis massa. Posuere sollicitudin aliquam
-            ultrices sagittis orci a scelerisque purus. Quis risus sed vulputate
-            odio ut enim blandit volutpat maecenas. At risus viverra adipiscing
-            at in tellus integer. Porttitor leo a diam sollicitudin tempor id.
-            Justo nec ultrices dui sapien eget mi proin sed libero. Risus quis
-            varius quam quisque. Id porta nibh venenatis cras sed. Ullamcorper
-            morbi tincidunt ornare massa eget.
+            With a plethora of benefits, and price points to fit all budgets,
+            you can't afford not to.
           </p>
         </div>
 
-        
+        <div class="news">
+          <h2 style="text-align: center">News</h2>
+          <h3>
+            12 summer 'bucket list' Katy destinations to visit before school
+            returns
+          </h3>
+          <p>
+            Katy ISD returns for the 2023-24 school year on Aug. 16, which means
+            there’s less than a month of summer left. With the end of summer
+            right around the corner, time is running out to experience some of
+            Katy’s summer destinations. Check out our summer “bucket list” of
+            Katy hot spots to consider visiting before the season ends.
+            <a
+              href="https://www.houstonchronicle.com/neighborhood/katy/article/katy-summer-destinations-18167247.php"
+              >Read More →</a
+            >
+          </p>
+        </div>
       </div>
     </main>
     <footer>
       <p>
         ©
-        <script src="./scripts/Date-Script.js"></script>
-        <a href="https://kityakat.github.io/index.html">Return to Portal</a>
+        <script src="scripts/date-script.js"></script>
+        <a href="https://wakeful-malachite-herring.glitch.me/index.html"
+          >Return to Portal</a
+        >
       </p>
     </footer>
+    <script src="scripts/topnav.js"></script>
   </body>
 </html>
