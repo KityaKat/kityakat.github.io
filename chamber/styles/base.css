@@ -1,13 +1,78 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
 
 :root {
-  --primary-color: #656e6d;
-  --secondary-color: #0c2967;
-  --accent1-color: #5b0a0a;
-  --accent2-color: #faf8d4;
+  --primary-color: #656e6d; /*gray*/
+  --secondary-color: #0c2967; /*navy blue*/
+  --accent1-color: #5b0a0a; /*dark red*/
+  --accent2-color: #faf8d4; /*pale yellow*/
 
   --heading-font: "Cinzel", serif;
   --paragraph-font: "Times New Roman", serif;
+}
+
+/*General Settings*/
+main div {
+  margin: 0.3em;
+  padding: 1em;
+  background-color: #faf8d4;
+  border: 2px solid #0c2967;
+  font-style: italic;
+  box-shadow: 0 4px 8px 0 #656e6d;
+}
+header {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  border: none;
+}
+
+h1 {
+  font-size: 3.5vw;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "cinzel", serif;
+  color: #656e6d;
+}
+p {
+  font-family: "Times New Roman", serif;
+  color: #656e6d;
+}
+ul {
+  list-style-type: none;
+  font-family: "Times New Roman", serif;
+  color: #656e6d;
+}
+footer {
+  margin-top: 1em;
+  border-top: 1px solid black;
+  text-align: center;
+}
+#logo {
+  width: 15rem;
+  margin: 2em;
+}
+.header-top {
+  display: flex;
+  align-content: center;
+  text-align: center;
+}
+/* Specifically for small screens */
+@media screen and (max-width: 600px) {
+  h1,
+  .join,
+  .spotlight3 {
+    display: none;
+  }
+}
+#social {
+  margin: 2em;
+}
+#social a {
+  padding: 0.5em;
 }
 
 /* Navagation Menu */
@@ -66,6 +131,152 @@
   display: none;
 }
 
+/* Main Page */
+.hero {
+  position: relative;
+  background-size: cover;
+  padding: 0;
+}
+.hero p {
+  display: inline-block;
+}
+.wrapper {
+  box-shadow: none;
+}
+.spotlight1,
+.spotlight2,
+.spotlight3 {
+  border: none;
+  background-color: #ffffff;
+  text-align: center;
+}
+#hero-heading {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0c2967;
+}
+#hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+#call-to-action {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  border-radius: 0.5rem;
+  background-color: #5b0a0a;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2vw;
+  font-family: "cinzel", serif;
+  padding: 20px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+#call-to-action span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#call-to-action a {
+  color: #ffffff;
+}
+
+#call-to-action span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#call-to-action:hover span {
+  padding-right: 25px;
+}
+
+#call-to-action:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.event-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+#events-banner{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+.events h2 {
+  position: absolute;
+  top: 0%;
+  color: #faf8d4;
+}
+.events h3 {
+  position: absolute;
+  top: 15%;
+  color: #faf8d4;
+}
+.events {
+  position: relative;
+  background-size: cover;
+  padding: 0;
+}
+.events p {
+  position: absolute;
+  top: 70%;
+  color: #ffffff;
+  padding:.5em;
+}
+
+/*Directory*/
+
+#directory-options {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+#directory-options div {
+  margin: 0px 10px;
+  color: #000000;
+  cursor: pointer;
+}
+#directory-options div > * {
+  pointer-events: none;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+}
+.cards.list {
+  grid-template-columns: 1fr;
+}
+
+section {
+  padding: 1em;
+  text-align: center;
+  gap: 5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+section:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.7);
+}
 
 /* Join Page */
 .joinForm {
@@ -90,7 +301,8 @@ input[type="tel"] {
   margin: 8px 0;
   box-sizing: border-box;
 }
-input[type=submit], input[type=reset] {
+input[type="submit"],
+input[type="reset"] {
   background-color: #0c2967;
   border: none;
   color: white;
@@ -106,92 +318,18 @@ textarea {
   box-sizing: border-box;
   resize: none;
 }
-
-/*Directory*/
-
-#directory-options{
-  display: flex;
-  justify-content: center;
-  padding: 2em;
+/* contact page */
+.contact {
+  grid-column: 1/4;
 }
-
-#directory-options div {
-  margin: 0px 10px;
-  color: #000000;
-  cursor: pointer;
-}
-#directory-options div > * {
-  pointer-events: none;
-}
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-column-gap: .5em;
-  grid-row-gap: .5em;
-}
-.cards.list {
-  grid-template-columns: 1fr;
-}
-
-section{
-  padding: 1em;
+.contact p,
+.contact h3 {
   text-align: center;
-  gap: 5em;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  background-color: #ffffff;
 }
-section:hover {
-  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.7);
+.cyfair {
+  grid-column: 1/6;
 }
-
-/*General Settings*/
-header {
-  font-family: "Cinzel", serif;
-  text-align: center;
-  border: none;
-}
-
-h1 {
-  font-size: 4vw;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "cinzel", serif;
-  color: #656e6d;
-}
-p {
-  font-family: "Times New Roman", serif;
-  color: #656e6d;
-}
-ul {
-  list-style-type: none;
-  font-family: "Times New Roman", serif;
-  color: #656e6d;
-}
-
-@media screen and (max-width: 600px) {
-  h1,
-  .join,
-  .spotlight3 {
-    display: none;
-  }
-}
-main div {
-  margin: 0.3em;
-  background-color: #faf8d4;
-  padding: 1em;
-  border: 2px solid #0c2967;
-  font-style: italic;
-  padding: 3em;
-}
-
-footer {
-  margin-top: 1em;
-  border-top: 1px solid black;
-  text-align: center;
+.form {
+  grid-column: 4/6;
+  text-align: right;
 }
