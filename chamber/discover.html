@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-     <link rel="icon" type="image/png" sizes="32x32" href="./chamber/images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./chamber/images/favicon-16x16.png" />
-    <link rel="stylesheet" href="./chamber/styles/normalize.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/base.css" />
-    <link rel="stylesheet" href="./styles/medium.css" />
-    <link rel="stylesheet" href="./styles/large.css" />
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="normalize.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,80 +26,177 @@
   </head>
   <body>
     <header>
-      <img
-        id="logo"
-        src="https://cdn.glitch.global/b70de2ce-0cce-4ec3-9873-568cae32f6d8/logo.png?v=1683165444903"
-        alt="chamber-site-logo"
-        style="width: 50%"
-      />
+      <div class="header-top">
+        <a href="index.html"
+          ><img
+            id="logo"
+            src="https://kityakat.github.io/chamber/images/logo.png"
+            alt="chamber-site-logo"
+        /></a>
+        <h1>Discover Cy-Fair!</h1>
+        <div id="social">
+          <a href="https://facebook.com"
+            ><img
+              src="https://kityakat.github.io/chamber/images/facebook-5-128.gif"
+              style="width: 4em" /></a
+          ><br />
+          <a href="https://linkedin.com"
+            ><img
+              src="https://kityakat.github.io/chamber/images/linkedin-4-128.gif"
+              style="width: 4em" /></a
+          ><br />
+        </div>
+      </div>
 
       <div id="nav">
-        <h1>Discover Cy-Fair!</h1>
+        <div></div>
+        <div id="date-today">
+          <h3><script src="todaysDate.js"></script></h3>
+        </div>
 
         <div class="topnav" id="myTopnav">
-          <script src="./scripts/topnav.js"></script>
           <a href="index.html" class="active">Home</a>
-          <a href="#news">News</a>
           <a href="join.html">Join Us!</a>
           <a href="discover.html">Discover</a>
           <a href="directory.html">Directory</a>
+          <a href="contact.html">Contact</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
+          </a>
+        </div>
       </div>
     </header>
+    <main>
+      <div class="cyfair">
+        <h2>Welcome to Cy-Fair</h2>
+        <p>
+          Cypress Fairbanks, or more fondly known as Cy-Fair, is one of the
+          largest communities in Northwest Houston. Cy-Fair encompasses 186
+          square miles and includes Katy, Cypress, and the city of Jersey
+          Village. This expansive area is located along U.S. Highway 290
+          (Northwest Freeway) twenty miles (32 km) northwest of Downtown
+          Houston. Two major freeways are found in the Cy-Fair area – U.S. 290
+          and State Highway 249, serving as the area’s major links with Houston.
+          The Sam Houston Tollway serves as a major connection to areas located
+          both east and south of Cy-Fair.
+        </p>
+        <p>
+          We are very proud of our thriving community nestled in the Northwest
+          quadrant of Houston. Since 2000, the population has increased over 50%
+          to nearly three-quarters of a million people. To put that in
+          perspective, if the Cy-Fair area were a city, it would be in the top
+          20 largest cities in the United States. It is not hard to figure out
+          why so many businesses and families have chosen to call Cy-Fair home.
+          This is a prosperous community that provides an outstanding quality of
+          life. You will find exactly what you are looking for within our
+          boundaries and you can find every service and product you need in our
+          directory of members.
+        </p>
+      </div>
+    </main>
 
-   <div class="cards">
-      <section>
+    <div class="cards">
+      <section class="discover">
         <picture
           ><img
-            src="https://www.antiqueace.com/images/8008790600.jpg"
+            src="https://kityakat.github.io/chamber/images/Traders Village.jpg"
             alt="exterior view"
             style="width: 100%"
         /></picture>
         <h2>Trader's Village</h2>
+        <p>
+          Massive outdoor flea market with shopping, special events, rides and
+          food vendors.
+        </p>
       </section>
-      <section>
+      <section class="discover">
         <picture
           ><img
-            src="https://assets.simon.com/propertyimages/1253/katy-mills-01.jpg"
+            src="https://kityakat.github.io/chamber/images/katy-mills.jpg"
             alt="interior of shopping mall"
             style="width: 100%"
         /></picture>
         <h2>Katy Mills</h2>
+        <p>
+          A climate controlled indoor shopping mall, home to over 175 stores
+          featuring a high-fashion line-up including H&M, Kate Spade New York,
+          Fossil, Michael Kors, Coach Outlet, Saks Fifth Avenue OFF 5th, The
+          Cosmetic Company Store, Cole Haan Outlet, Tommy Bahama and Steve
+          Madden. Katy Mills is located at the intersection of I-10 West and Pin
+          Oak Road approximately 25 miles West of downtown Houston and
+          conveniently located near the Houston Energy corridor.
+        </p>
       </section>
-      <section>
+      <section class="discover">
         <picture
           ><img
-            src="https://typhoontexas.com/wp-content/uploads/2022/12/waterpark-section-image.jpg"
+            src="https://kityakat.github.io/chamber/images/typhoon-texas.jpg"
             alt="aerial view of waterpark"
             style="width: 100%"
         /></picture>
         <h2>Typhoon Texas Water Park</h2>
+        <p>
+          It's Time For. Good. Clean. Fun. Experience 25 acres of waterslides,
+          floating on the lazy river, and live entertainment.
+        </p>
       </section>
-      <section>
+      <section class="discover">
         <picture
           ><img
-            src="https://images.saymedia-content.com/.image/ar_3:2%2Cc_limit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_960/MTc5OTQ2MzU1Mzk2NTg0NTcw/telge-park-charming-neighborhood-park-in-cypress-texas.jpg"
+            src="https://kityakat.github.io/chamber/images/telge-park.jpg"
             alt="Telge Park Trail"
             style="width: 100%"
         /></picture>
         <h2>Telge Park</h2>
+        <p>
+          Telge Park is a neighborhood park with a play area for kids and some
+          shaded areas for playing sports or picnicking. There is a short trail
+          that leads you over a boardwalk in the wetlands area out towards
+          Cypress Creek. The trail takes you back through the woods and then
+          returns you along the creek.
+        </p>
       </section>
-      <section>
+      <section class="discover">
         <picture
           ><img
-            src="https://live.staticflickr.com/3478/4073045513_3fc6e7c716.jpg"
+            src="https://kityakat.github.io/chamber/images/txr-paintball.jpg"
             alt="Man playing paintball"
             style="width: 100%"
         /></picture>
         <h2>TXR Paintball</h2>
+        <p>
+          TXR Paintball! Houston Area Paintball games that are family owned,
+          operated, and oriented! A little history: Built on 65 combined years
+          of paintball experience, Texas Rangers (TXR) Paintball is owned and
+          operated by the owners and senior staff from Paintball U.S.A. Regarded
+          as one of the best fields in the country to play paintball at, Darrell
+          and Kelly McNeill have brought their management style of running a
+          field for players by the players to TXR Paintball and have again built
+          a great environment for all styles of paintball play.
+        </p>
+      </section>
+      <section class="discover">
+        <picture
+          ><img
+            src="https://kityakat.github.io/chamber/images/Cypress-Tx.jpg"
+            alt="Towne Lake Cypress"
+            style="width: 100%"
+        /></picture>
+        <h2>The Boardwalk at Towne Lake</h2>
+        <p>
+          The Boardwalk at Towne Lake is where business meets pleasure. Packed
+          with restaurants, shops, fitness studios, and more - all along Towne
+          Lake’s sparkling shores, it's the perfect place to tie up and unwind.
+        </p>
       </section>
     </div>
-     <footer>
+    <footer>
       <p>
         ©
-        <script src="./scripts/Date-Script.js"></script>
-        <a href="https://kityakat.github.io/index.html">Return to Portal</a>
+        <script src="Date-Script.js"></script>
+        <a href="https://wakeful-malachite-herring.glitch.me/index.html"
+          >Return to Portal</a
+        >
       </p>
     </footer>
   </body>
