@@ -1,4 +1,4 @@
-var elements = document.getElementsByClassName("cards");
+var elements = document.querySelector(".cards section");
 
 var i;
 
