@@ -1,17 +1,17 @@
-var wrapper = document.getElementById("cards");
+var elements = document.getElementsByClassName("cards");
 
-document.addEventListener("click", function (event) {
-  if (!event.target.matches(".list")) return;
+var i;
 
-  // List view
-  event.preventDefault();
-  wrapper.classList.add("list");
-});
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
 
-document.addEventListener("click", function (event) {
-  if (!event.target.matches(".grid")) return;
-
-  // List view
-  event.preventDefault();
-  wrapper.classList.remove("list");
-});
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
