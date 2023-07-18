@@ -1,0 +1,78 @@
+@media only screen and (min-width: 1000px) {
+  .topnav .icon {
+    display: none;
+  }
+  #small-header {
+    display: none;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    border: none;
+    background: transparent;
+  }
+  .drink {
+    grid-column: 1;
+    grid-row: 1/3;
+  }
+  .drink-stats {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .contact {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .weather {
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .fresh {
+    grid-column: 1/2;
+  }
+  .coastal {
+    grid-column: 2 / 6;
+    grid-row: 2/6;
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: solid 2px #ed9121;
+  }
+  .coastal h2 {
+    column-span: all;
+  }
+
+  /* fresh page*/
+  .text {
+    grid-column: 2/6;
+    grid-row: 1;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .freshForm {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    padding: 2em;
+    margin: 0.5em;
+  }
+  .nutrition {
+    grid-column: 4/6;
+    grid-row: 2/4;
+  }
+
+  /* about us page*/
+  .contact2 {
+    grid-column: 5;
+    grid-row: 2;
+  }
+  .google-map {
+    grid-column: 2/5;
+    grid-row: 2/4;
+  }
+  .locations {
+    grid-column: 1;
+    grid-row: 1/4;
+  }
+}
