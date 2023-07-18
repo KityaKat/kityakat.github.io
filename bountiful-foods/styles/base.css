@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css?family=Caprasimo&family=Cooper-Black&family=Montserrat");
+
+:root {
+  --primary-color: #ace1af; /*celadon green*/
+  --secondary-color: #228b22; /*forest green*/
+  --accent1-color: #ed9121; /*orange*/
+  --accent2-color: #f3e5ab; /*cream*/
+  --accent3-color: #fffff0; /*ivory*/
+
+  --heading-font: "Caprasimo", "Cooper-Black", serif;
+  --paragraph-font: "Montserrat", sans-serif;
+}
+
+/*General Settings*/
+html {
+  background-color: #ace1af;
+}
+main div {
+  margin: 0.3em;
+  padding: 1em;
+  background-color: #fffff0;
+  box-shadow: 0 4px 8px 0 #656e6d;
+}
+header {
+  font-family: "Caprasimo", "cooper-black", serif;
+  text-align: center;
+  border: none;
+}
+
+h1 {
+  font-size: 4vw;
+  color: #ed9121;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "caprasimo", serif;
+  color: #228b22;
+}
+p {
+  font-family: "montserrat", sans-serif;
+  color: #228b22;
+}
+a {
+  font-family: "montserrat", sans-serif;
+  color: #ed9121;
+  font-weight: bold;
+}
+ul {
+  font-family: "montserrat", sans-serif;
+  color: #228b22;
+}
+footer {
+  margin-top: 1em;
+  border-top: 1px solid black;
+  text-align: center;
+}
+#logo {
+  max-width: 40%;
+  height: auto;
+  margin: 2em 0;
+}
+.header-top {
+  display: flex;
+  align-content: center;
+  text-align: center;
+}
+/* Specifically for small screens */
+@media screen and (max-width: 900px) {
+  #logo,
+  h1,
+  .drink {
+    display: none;
+  }
+}
+/* Navagation Menu */
+
+@media screen and (max-width: 500px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+  border-bottom: 2px solid #ed9121;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #228b22;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #f3e5ab;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #228b22;
+  color: #fffff0;
+}
+
+/* Main Page */
+#social {
+  margin: -1em;
+  background-color: transparent;
+  box-shadow: none;
+}
+#social a {
+  padding: 0.5em;
+}
+.coastal p {
+  display: inline-block;
+}
+.coastal img {
+  border-radius: 5px 50px;
+  max-width: 100%;
+  height: auto;
+}
+.weather{
+  background-color: #f3e5ab;
+  border-radius: 5px 50px;
+}
+.weather div{
+  box-shadow: none;
+  border-radius: 5px 50px;
+}
+.weather img {
+    display: block;
+    margin: 1.5em auto;
+    background-color: #ed9121;
+    border-radius: 2px 10px;
+}
+.forecast {
+    display: flex;
+    justify-content: center;
+}
+.forecast h3 {
+    width: 5rem;
+    padding: .5rem;
+}
+.contact{
+  border-radius: 5px 50px;
+}
+.wrapper {
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+}
+#hero-heading {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fffff0;
+}
+#hero-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#call-to-action {
+  border-radius: 0.5rem;
+  background-color: #228b22;
+  border: none;
+  color: #fffff0;
+  text-align: center;
+  font-size: 1.5vw;
+  font-family: "caprasimo", serif;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+#call-to-action span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#call-to-action a {
+  color: #fffff0;
+  font-family: "caprasimo", serif;
+}
+
+#call-to-action span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#call-to-action:hover span {
+  padding-right: 25px;
+}
+
+#call-to-action:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.drink-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 5px 50px;
+}
+#drink-banner {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+}
+.drink h2 {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+}
+.drink h3 {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+}
+.drink {
+  position: relative;
+  background-size: cover;
+  padding: 0;
+  border-radius: 5px 50px;
+}
+.drink p {
+  position: absolute;
+  top: 65%;
+  left: 0%;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+  padding: 0.5em;
+}
+.drink-stats{
+  background-color: #f3e5ab;
+  border-radius: 5px 50px;
+}
+/* fresh page */
+.freshForm {
+  text-align: right;
+  border: 2px;
+  font-family: "montserrat", sans-serif;
+  border-radius: 5px 50px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type="tel"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+select {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+input[type="submit"],
+input[type="reset"] {
+  border-radius: 0.5rem;
+  background-color: #228b22;
+  border: none;
+  color: #fffff0;
+  text-align: center;
+  font-size: 1.5vw;
+  font-family: "caprasimo", serif;
+  padding: 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  resize: none;
+}
+#nutrition{
+  border-radius: 5px 50px;
+}
+/* about us page */
+.contact p,
+.contact h3 {
+  text-align: center;
+}
+.text {
+  box-shadow: none;
+  background-color: transparent;
+}
+.google-map{
+  border-radius: 5px 50px;
+}
+.locations{
+  border-radius: 5px 50px;
+}
+.contact2{
+  border-radius: 5px 50px;
+}
