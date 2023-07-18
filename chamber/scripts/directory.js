@@ -10,7 +10,7 @@ function displayCompanies(companies) {
     const cards = document.querySelector("div.cards");
 
     companies.forEach((company) => {
-        let card = document.createElement("section");
+        let card = document.createElement("section.cards");
         let logo = document.createElement("img");
         let address = document.createElement("p");
         let phoneNum = document.createElement("p");
