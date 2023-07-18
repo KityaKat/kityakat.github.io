@@ -1,0 +1,181 @@
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Cooper+Black&family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Final Project for WDD 230" />
+    <title>Bountiful Foods</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <a href="index.html"
+          ><img
+            id="logo"
+            src="https://raw.githubusercontent.com/KityaKat/kityakat.github.io/master/bountiful-foods/images/BF-Small-Logo.png"
+            alt="Bountiful Foods Logo"
+            style="width: 15em"
+        /></a>
+        <h1>Bountiful Foods</h1>
+        <img
+          id="small-header"
+          src="https://github.com/KityaKat/kityakat.github.io/blob/master/bountiful-foods/images/BF%20logo.jpg?raw=true"
+          alt="Bountiful Foods Header for small screens"
+          style="width: 100vw"
+        />
+      </div>
+
+      <div id="nav">
+        <div></div>
+        <div id="date-today">
+          <h3><script src="scripts/todays-date.js"></script></h3>
+        </div>
+
+        <div class="topnav" id="myTopnav">
+          <a href="index.html" class="active">Home</a>
+          <a href="fresh.html">Fresh</a>
+          <a href="about-us.html">About Us</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- beginning of the main part -->
+    <main>
+      <div class="wrapper">
+        <div class="text">
+          <h2>For Us It's All About Fresh</h2>
+          <p>
+            In order to offer our patrons the freshest, tastiest and healthiest
+            menu items available, our sustainable-conscious company has
+            partnered with local, organic growers as our main source of food
+            supply. This is a win for everyone. We receive the opportunity to
+            incorporate the freshest foods into our recipes, while also helping
+            the local economy thrive, and our patrons benefit by enjoying
+            delectable food that can only be experienced via produce that is
+            grown locally. Locally sourced ingredients are always on our menu
+            and our specials reflect what's in season. We partner with a variety
+            of local farms in the region and take the time to source each of our
+            ingredients.
+          </p>
+        </div>
+        <div class="drink">
+          <h2>Drink of the Month:</h2>
+          <h3>Watermelon Lemonade</h3>
+          <img
+            src="https://bakerbynature.com/wp-content/uploads/2022/08/watermelon-lemonade-5.jpg"
+            class="drink-img"
+          />
+
+          <p>
+            <strong>
+              Watermelon, lemon and a hint of mint. This month's drink is a
+              refreshing summer classic!
+              <br /><br />
+              Order Instructions: Select two watermelon and one lemon and write
+              'watermelon lemonade' in the special instructions!
+            </strong>
+          </p>
+        </div>
+        <div class="drink-stats">
+          <h2>Drink Stats</h2>
+          <p>You've created # specialty drinks since DATE</p>
+          <button id="call-to-action">
+            <a href="fresh.html"> <span>Mix Your Own</span></a>
+          </button>
+        </div>
+        <div class="freshForm">
+          <form>
+            <label for="firstName">First Name</label><br />
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              required
+            /><br /><br />
+
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Someone@mail.com"
+            /><br /><br />
+
+            <label for="phone">Cell Phone Number</label><br />
+            <input type="tel" id="phone" name="phone" required /><br /><br />
+
+            <label for="fruit1">Fruit 1</label><br />
+            <select id="fruit1" name="fruit" required>
+              <option value="Choose">Choose Fruit</option>
+            </select>
+            <br /><br />
+
+            <label for="fruit2">Fruit 2</label><br />
+            <select id="fruit2" name="fruit">
+              <option value="Choose">Choose Fruit</option>
+            </select>
+            <br /><br />
+
+            <label for="fruit3">Fruit 3</label><br />
+            <select id="fruit3" name="fruit">
+              <option value="Choose">Choose Fruit</option>
+            </select>
+            <br /><br />
+
+            <label for="instructions">Special Instructions</label><br />
+            <textarea id="instructions" name="instructions" rows="6"></textarea
+            ><br /><br />
+
+            <input id="submit" type="submit" value="Submit" />
+            <input type="reset" />
+          </form>
+        </div>
+        <div id="nutrition">
+          <h2>Order Information:</h2>
+          <p id="order-name"></p>
+          <p id="order-email"></p>
+          <p id="order-phone"></p>
+          <p id="order-fruits">
+            <span id="order-fruit1"></span><span id="order-fruit2"></span
+            ><span id="order-fruit3"></span>
+          </p>
+          <p id="order-instructions"></p>
+          <p id="order-fat"></p>
+          <p id="order-protein"></p>
+          <p id="order-carbohydrates"></p>
+          <p id="order-sugar"></p>
+          <p id="order-calories"></p>
+          <p id="order-date"></p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        ©
+        <script src="scripts/date-script.js"></script>
+        <a href="https://kityakat.github.io/index.html"
+          >Return to Portal</a
+        >
+      </p>
+    </footer>
+    <script src="scripts/topnav.js"></script>
+    <script src="scripts/dropdown.js"></script>
+  </body>
+</html>
