@@ -247,12 +247,12 @@ footer {
 .drink h2 {
   position: absolute;
   top: 2%;
-  left: 5%;
+  left: 0%;
 }
 .drink h3 {
   position: absolute;
   top: 7%;
-  left: 5%;
+  left: 0%;
 }
 .drink {
   position: relative;
