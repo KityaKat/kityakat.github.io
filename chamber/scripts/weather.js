@@ -1,4 +1,4 @@
-const url = "https://api.openweathermap.org/data/2.5/forecast?q=cypress&units=imperial&appid=e23e17622b0c04f29d9582bd29cfb3ec";
+const url = "https://api.openweathermap.org/data/2.5/forecast?q=cypress,tx,us&units=imperial&appid=e23e17622b0c04f29d9582bd29cfb3ec";
 
 async function apiFetch() {
     try {
