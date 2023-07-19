@@ -239,6 +239,11 @@ footer {
   color: #ffffff;
   padding:.5em;
 }
+.weather div{
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
 
 /*Directory*/
 
