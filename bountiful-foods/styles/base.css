@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #ace1af; /*celadon green*/
-  --secondary-color: #228b22; /*forest green*/
+  --secondary-color: #134e13; /*forest green*/
   --accent1-color: #ed9121; /*orange*/
   --accent2-color: #f3e5ab; /*cream*/
   --accent3-color: #fffff0; /*ivory*/
@@ -38,20 +38,20 @@ h4,
 h5,
 h6 {
   font-family: "caprasimo", serif;
-  color: #228b22;
+  color: #134e13;
 }
 p {
   font-family: "montserrat", sans-serif;
-  color: #228b22;
+  color: #134e13;
 }
 a {
   font-family: "montserrat", sans-serif;
-  color: #ed9121;
+  color: #134e13;
   font-weight: bold;
 }
 ul {
   font-family: "montserrat", sans-serif;
-  color: #228b22;
+  color: #134e13;
 }
 footer {
   margin-top: 1em;
@@ -111,7 +111,7 @@ footer {
 .topnav a {
   float: left;
   display: block;
-  color: #228b22;
+  color: #134e13;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -124,7 +124,7 @@ footer {
 }
 
 .topnav a.active {
-  background-color: #228b22;
+  background-color: #134e13;
   color: #fffff0;
 }
 
@@ -247,12 +247,12 @@ footer {
 .drink h2 {
   position: absolute;
   top: 2%;
-  left: 0%;
+  left: 5%;
 }
 .drink h3 {
   position: absolute;
   top: 7%;
-  left: 0%;
+  left: 5%;
 }
 .drink {
   position: relative;
